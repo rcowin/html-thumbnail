@@ -1,4 +1,4 @@
-# htmlthumbnail
+# html-thumbnail
  React component to create and render thumbnails from html.
 
  Relies heavily on https://github.com/niklasvh/html2canvas for all the heavy lifting.
