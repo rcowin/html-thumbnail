@@ -1,0 +1,27 @@
+{
+  "name": "htmlthumbnail",
+  "version": "0.1.0",
+  "description": "React component to render thumbnails from html",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/rcowin/htmlthumbnail.git"
+  },
+  "keywords": [
+    "html",
+    "thumbnail",
+    "react"
+  ],
+  "author": "Richard Cowin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rcowin/htmlthumbnail/issues"
+  },
+  "homepage": "https://github.com/rcowin/htmlthumbnail#readme",
+  "dependencies": {
+    "html2canvas": "^1.0.0-rc.5"
+  }
+}
