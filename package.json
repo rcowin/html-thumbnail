@@ -1,5 +1,5 @@
 {
-  "name": "htmlthumbnail",
+  "name": "html-thumbnail",
   "version": "0.1.0",
   "description": "React component to render thumbnails from html",
   "main": "index.js",
