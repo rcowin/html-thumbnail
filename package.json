@@ -1,17 +1,8 @@
 {
   "name": "html-thumbnail",
-  "version": "0.1.1",
   "description": "React component to render thumbnails from html",
-  "main": "./dist/index.js",
-  "scripts": {
-    "test": "NODE_ENV=test jest",
-    "build": "babel src  --out-dir dist",
-    "prepublish": "yarn build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@github.com/rcowin/htmlthumbnail.git"
-  },
+  "version": "0.1.2",
+  "private": false,
   "keywords": [
     "html",
     "thumbnail",
@@ -19,24 +10,31 @@
   ],
   "author": "Richard Cowin",
   "license": "MIT",
+  "main": "./dist/index.js",
   "bugs": {
-    "url": "https://github.com/rcowin/htmlthumbnail/issues"
+    "url": "https://github.com/rcowin/html-thumbnail/issues"
   },
-  "homepage": "https://github.com/rcowin/htmlthumbnail#readme",
+  "homepage": "https://github.com/rcowin/html-thumbnail#readme",
+  "babel": {
+    "presets": [
+      "@babel/preset-react"
+    ]
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "publish:npm": "rm -rf dist && mkdir dist &&  babel ./src -d dist --copy-files"
+  },
   "dependencies": {
     "html2canvas": "^1.0.0-rc.5",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-scripts": "3.3.1"
   },
   "devDependencies": {
-    "babel-cli": "^6.0.0",
-    "babel-core": "^6.26.3",
-    "babel-jest": "^23.6.0",
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "babel-preset-es2015": "^6.0.0",
-    "babel-preset-jest": "^23.2.0",
-    "jest": "^23.6.0",
-    "regenerator-runtime": "^0.12.1"
+    "@babel/cli": "^7.8.4",
+    "@babel/preset-react": "^7.8.3"
   }
 }
